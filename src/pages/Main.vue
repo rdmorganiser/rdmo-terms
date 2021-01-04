@@ -3,12 +3,12 @@
     <Nav />
 
     <main>
-      <div class="container">
+      <div class="container mb-5">
         <h1 class="mt-5">{{ title }}</h1>
 
-        <Search class="mt-2 mb-3" v-bind:filter="filter" v-on:update-filter="filter = $event" />
+        <Search class="mt-4 mb-4" v-bind:filter="filter" v-on:update-filter="filter = $event" />
 
-        <div class="card mb-3"
+        <div class="card mb-2"
              v-for="element in elements" :key="element.uri"
              v-show="results.includes(element.uri)">
           <div class="card-header">
