@@ -17,7 +17,7 @@
     methods: {
       go (event) {
         event.preventDefault()
-        this.$root.route = this.href
+        this.$root.pathname = this.href
         window.history.pushState(
           null,
           routes[this.href],

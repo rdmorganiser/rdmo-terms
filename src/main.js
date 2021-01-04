@@ -9,7 +9,6 @@ import Home from './pages/Home'
 import Main from './pages/Main'
 import NotFound from './pages/NotFound'
 
-
 Vue.mixin({
   methods: {
     capitalize (string) {
@@ -21,11 +20,18 @@ Vue.mixin({
 new Vue({
   el: '#app',
   data: {
-    route: window.location.pathname
+    pathname: window.location.pathname
   },
   computed: {
+    route () {
+      if (Vue.config.devtools) {
+        return this.pathname.replace(/^(\/)/, '')
+      } else {
+        return this.pathname.replace(/^(\/terms\/)/, '')
+      }
+    },
     ViewComponent () {
-      if (this.route == '/') {
+      if (this.route == '') {
         return Home
       } else if (Object.keys(routes).includes(this.route)) {
         return Main

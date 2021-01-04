@@ -24,7 +24,7 @@
             </ul>
           </div>
           <div class="card-footer">
-            <NavLink href="/questions">Go to questions</NavLink>
+            <NavLink href="./questions">Go to questions</NavLink>
           </div>
         </div>
 
@@ -39,7 +39,7 @@
             </ul>
           </div>
           <div class="card-footer">
-            <NavLink href="/domain">Go to domain</NavLink>
+            <NavLink href="./domain">Go to domain</NavLink>
           </div>
         </div>
 
@@ -55,7 +55,7 @@
             </ul>
           </div>
           <div class="card-footer">
-            <NavLink href="/domain">Go to domain</NavLink>
+            <NavLink href="./domain">Go to domain</NavLink>
           </div>
         </div>
 
@@ -70,7 +70,7 @@
             </ul>
           </div>
           <div class="card-footer">
-            <NavLink href="/questions">Go to conditions</NavLink>
+            <NavLink href="./questions">Go to conditions</NavLink>
           </div>
         </div>
 
@@ -85,7 +85,7 @@
             </ul>
           </div>
           <div class="card-footer">
-            <NavLink href="/tasks">Go to tasks</NavLink>
+            <NavLink href="./tasks">Go to tasks</NavLink>
           </div>
         </div>
 
@@ -100,7 +100,7 @@
             </ul>
           </div>
           <div class="card-footer">
-            <NavLink href="/views">Go to views</NavLink>
+            <NavLink href="./views">Go to views</NavLink>
           </div>
         </div>
       </div>
