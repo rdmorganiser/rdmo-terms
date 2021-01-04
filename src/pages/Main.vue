@@ -6,7 +6,7 @@
     <main>
       <div class="container">
 
-        <h1 class="mb-3">{{ title }}</h1>
+        <h1 class="mt-5 mb-3">{{ title }}</h1>
 
         <div class="card mb-3"
              v-for="element in elements" :key="element.uri"
@@ -69,12 +69,12 @@
   }
 </script>
 
-<style>
+<style scoped>
 .card-header {
   word-break: break-all;
 }
-main .container {
-  padding-top: 140px;
+.container {
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 </style>
