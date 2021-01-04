@@ -20,18 +20,11 @@ Vue.mixin({
 new Vue({
   el: '#app',
   data: {
-    pathname: window.location.pathname
+    route: '/'
   },
   computed: {
-    route () {
-      if (Vue.config.devtools) {
-        return this.pathname.replace(/^(\/)/, '')
-      } else {
-        return this.pathname.replace(/^(\/terms\/)/, '')
-      }
-    },
     ViewComponent () {
-      if (this.route == '') {
+      if (this.route == '/') {
         return Home
       } else if (Object.keys(routes).includes(this.route)) {
         return Main

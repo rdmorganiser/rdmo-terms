@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <NavLink class="navbar-brand" href="">rdmo-terms</NavLink>
+    <NavLink class="navbar-brand" href="#" data-route="/">rdmo-terms</NavLink>
 
     <button class="navbar-toggler" type="button"
             data-toggle="collapse" data-target="#navbarContent"
@@ -11,22 +11,22 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <NavLink class="nav-link" href="questions">Questions</NavLink>
+          <NavLink class="nav-link" href="#" data-route="/questions">Questions</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" href="domain">Domain</NavLink>
+          <NavLink class="nav-link" href="#" data-route="/domain">Domain</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" href="options">Options</NavLink>
+          <NavLink class="nav-link" href="#" data-route="/options">Options</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" href="conditions">Conditions</NavLink>
+          <NavLink class="nav-link" href="#" data-route="/conditions">Conditions</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" href="tasks">Tasks</NavLink>
+          <NavLink class="nav-link" href="#" data-route="/tasks">Tasks</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" href="views">Views</NavLink>
+          <NavLink class="nav-link" href="#" data-route="/views">Views</NavLink>
         </li>
       </ul>
     </div>
