@@ -1,14 +1,14 @@
 <template>
   <div>
     <Nav />
-
+    <Search v-bind:filter="filter" v-on:update-filter="filter = $event"
+                    :resultsCount="results.length" :totalCount="elements.length"/>
     <main>
-      <div class="container mb-5">
-        <h1 class="mt-5">{{ title }}</h1>
+      <div class="container">
 
-        <Search class="mt-4 mb-4" v-bind:filter="filter" v-on:update-filter="filter = $event" />
+        <h1 class="mb-3">{{ title }}</h1>
 
-        <div class="card mb-2"
+        <div class="card mb-3"
              v-for="element in elements" :key="element.uri"
              v-show="results.includes(element.uri)">
           <div class="card-header">
@@ -72,5 +72,9 @@
 <style>
 .card-header {
   word-break: break-all;
+}
+main .container {
+  padding-top: 140px;
+  padding-bottom: 60px;
 }
 </style>

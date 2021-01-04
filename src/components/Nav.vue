@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark sticky">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <NavLink class="navbar-brand" href="/">rdmo-terms</NavLink>
 
     <button class="navbar-toggler" type="button"

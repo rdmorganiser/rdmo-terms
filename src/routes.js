@@ -12,7 +12,7 @@ export default {
     keys: ['uri_prefix', 'comment',
            'title_en', 'title_de', 'title_fr',
            'text_en', 'text_de', 'text_fr'],
-    filterKeys: ['uri'],
+    filterKeys: ['uri', 'comment'],
     elements: questions
   },
   '/domain': {

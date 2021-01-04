@@ -15,6 +15,10 @@ function buildIndex (elements, keys) {
 }
 
 function filterTerms (idx, filter = '') {
+  if (filter.length > 0) {
+    filter = '*' + filter + '*'
+  }
+
   return idx.search(filter).map(result => {
     return result.ref
   })
