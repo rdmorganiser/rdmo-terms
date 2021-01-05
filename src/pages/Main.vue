@@ -89,7 +89,7 @@
   word-break: break-all;
 }
 .container {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 60px;
 }
 </style>
