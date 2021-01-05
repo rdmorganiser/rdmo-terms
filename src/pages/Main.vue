@@ -2,15 +2,14 @@
   <div>
     <Nav />
     <Search v-bind:filter="filter" v-on:update-filter="filter = $event"
-                    :resultsCount="results.length" :totalCount="elements.length"/>
+                    :resultsCount="searchResults.length" :totalCount="elements.length"/>
     <main>
       <div class="container">
 
         <h1 class="mt-5 mb-3">{{ title }}</h1>
 
         <div class="card mb-3"
-             v-for="element in elements" :key="element.uri"
-             v-show="results.includes(element.uri)">
+             v-for="element in filteredElements" :key="element.uri">
           <div class="card-header">
             <div class="row">
               <div class="col-2 text-right"><strong>{{ capitalize(element.type) }}</strong></div>
@@ -41,30 +40,46 @@
   import Search from '../components/Search'
 
   export default {
-    props: ['title', 'keys', 'filterKeys', 'elements'],
+    props: ['title', 'keys', 'elements'],
     data () {
       return {
         filter: '',
-        idx: [],
-        results: []
+        elementsMap: {},
+        searchIndex: [],
+        searchResults: []
       }
     },
     created () {
-      this.idx = buildIndex(this.elements, this.filterKeys)
-      this.results = filterTerms(this.idx)
+      this.init()
     },
     watch: {
       elements () {
-        this.idx = buildIndex(this.elements, this.filterKeys)
-        this.results = filterTerms(this.idx)
+        this.init()
       },
       filter () {
-        this.results = filterTerms(this.idx, this.filter)
+        this.searchResults = filterTerms(this.searchIndex, this.filter)
+      },
+    },
+    computed: {
+      filteredElements () {
+        return this.searchResults.map(uri => {
+          return this.elementsMap[uri]
+        })
       }
     },
     components: {
       Nav,
       Search
+    },
+    methods: {
+      init () {
+        this.elementsMap = this.elements.reduce((acc, cur) => {
+          acc[cur.uri] = cur
+          return acc
+        }, {})
+        this.searchIndex = buildIndex(this.elements, this.keys)
+        this.searchResults = filterTerms(this.searchIndex, this.filter)
+      }
     }
   }
 </script>

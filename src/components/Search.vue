@@ -1,7 +1,7 @@
 <template>
-  <div class="fixed-top fixed-offset">
+  <div class="fixed-top fixed-offset pt-3 pb-2">
     <div class="container">
-      <div class="form-row d-flex align-items-center pt-2 pb-2">
+      <div class="form-row d-flex align-items-center">
         <div class="col-9">
           <input type="text" placeholder="Filter elements" class="form-control"
                  v-bind:value="filter" v-on:input="debounceInput"/>
@@ -9,6 +9,11 @@
         <div class="col-3 text-right">
           <span>{{ resultsCount }} of {{ totalCount }} elements displayed.</span>
         </div>
+      </div>
+      <div>
+        <small class="form-text text-muted">
+          We use <a href="https://lunrjs.com/guides/searching.html">lunr syntax</a>, please use wildcards (*) to search inside a URI, e.g. *dataset*.
+        </small>
       </div>
     </div>
   </div>

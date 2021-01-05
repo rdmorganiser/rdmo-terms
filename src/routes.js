@@ -12,40 +12,35 @@ export default {
     keys: ['uri_prefix', 'comment',
            'title_en', 'title_de', 'title_fr',
            'text_en', 'text_de', 'text_fr'],
-    filterKeys: ['uri', 'comment'],
     elements: questions
   },
   '/domain': {
     title: 'Domain',
-    keys: ['uri_prefix', 'comment',
-           'parent'],
-    filterKeys: ['uri'],
+    keys: ['uri_prefix', 'comment'],
     elements: domain
   },
   '/options': {
     title: 'Options',
     keys: ['uri_prefix', 'comment', 'text_en', 'text_de', 'text_fr'],
-    filterKeys: ['uri', 'comment', 'text_en', 'text_de', 'text_fr'],
     elements: options
   },
   '/conditions': {
     title: 'Conditions',
-    keys: ['uri_prefix', 'comment'],
-    filterKeys: ['uri'],
+    keys: ['uri_prefix', 'comment', 'source', 'target_text', 'target_option'],
     elements: conditions
   },
   '/tasks': {
     title: 'Tasks',
     keys: ['uri_prefix', 'comment',
+           'title_en', 'title_de', 'title_fr',
            'text_en', 'text_de', 'text_fr'],
-    filterKeys: ['uri'],
     elements: tasks
   },
   '/views': {
     title: 'Views',
     keys: ['uri_prefix', 'comment',
-           'title_en', 'title_de', 'title_fr'],
-    filterKeys: ['uri'],
+           'title_en', 'title_de', 'title_fr',
+           'help_en', 'help_de', 'help_fr'],
     elements: views
   }
 }
