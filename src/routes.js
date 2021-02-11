@@ -9,36 +9,36 @@ export default {
   '/': {},
   '/questions': {
     title: 'Questions',
-    keys: ['uri_prefix', 'comment',
+    keys: ['uri_prefix', 'key', 'comment',
            'title_en', 'title_de', 'title_fr',
            'text_en', 'text_de', 'text_fr'],
     elements: questions
   },
   '/domain': {
     title: 'Domain',
-    keys: ['uri_prefix', 'comment'],
+    keys: ['uri_prefix', 'key', 'comment'],
     elements: domain
   },
   '/options': {
     title: 'Options',
-    keys: ['uri_prefix', 'comment', 'text_en', 'text_de', 'text_fr'],
+    keys: ['uri_prefix', 'key', 'comment', 'text_en', 'text_de', 'text_fr'],
     elements: options
   },
   '/conditions': {
     title: 'Conditions',
-    keys: ['uri_prefix', 'comment', 'source', 'target_text', 'target_option'],
+    keys: ['uri_prefix', 'key', 'comment', 'source', 'target_text', 'target_option'],
     elements: conditions
   },
   '/tasks': {
     title: 'Tasks',
-    keys: ['uri_prefix', 'comment',
+    keys: ['uri_prefix', 'key', 'comment',
            'title_en', 'title_de', 'title_fr',
            'text_en', 'text_de', 'text_fr'],
     elements: tasks
   },
   '/views': {
     title: 'Views',
-    keys: ['uri_prefix', 'comment',
+    keys: ['uri_prefix', 'key', 'comment',
            'title_en', 'title_de', 'title_fr',
            'help_en', 'help_de', 'help_fr'],
     elements: views
