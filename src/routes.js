@@ -10,8 +10,8 @@ export default {
   '/questions': {
     title: 'Questions',
     keys: ['uri_prefix', 'key', 'comment',
-           'title_en', 'title_de', 'title_fr',
-           'text_en', 'text_de', 'text_fr'],
+           'title_en', 'title_de', 'title_fr', 'title_it',
+           'text_en', 'text_de', 'text_fr', 'text_it'],
     elements: questions
   },
   '/domain': {
@@ -21,7 +21,7 @@ export default {
   },
   '/options': {
     title: 'Options',
-    keys: ['uri_prefix', 'key', 'comment', 'text_en', 'text_de', 'text_fr'],
+    keys: ['uri_prefix', 'key', 'comment', 'text_en', 'text_de', 'text_fr', 'text_it'],
     elements: options
   },
   '/conditions': {
@@ -32,15 +32,15 @@ export default {
   '/tasks': {
     title: 'Tasks',
     keys: ['uri_prefix', 'key', 'comment',
-           'title_en', 'title_de', 'title_fr',
-           'text_en', 'text_de', 'text_fr'],
+           'title_en', 'title_de', 'title_fr', 'title_it',
+           'text_en', 'text_de', 'text_fr', 'text_it'],
     elements: tasks
   },
   '/views': {
     title: 'Views',
     keys: ['uri_prefix', 'key', 'comment',
-           'title_en', 'title_de', 'title_fr',
-           'help_en', 'help_de', 'help_fr'],
+           'title_en', 'title_de', 'title_fr', 'title_it',
+           'help_en', 'help_de', 'help_fr', 'help_it'],
     elements: views
   }
 }
