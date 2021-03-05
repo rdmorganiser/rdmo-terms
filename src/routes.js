@@ -10,6 +10,7 @@ export default {
   '/questions': {
     title: 'Questions',
     keys: ['uri_prefix', 'key', 'comment',
+           'attribute',
            'title_en', 'title_de', 'title_fr', 'title_it',
            'text_en', 'text_de', 'text_fr', 'text_it'],
     elements: questions
