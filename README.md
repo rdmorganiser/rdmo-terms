@@ -16,8 +16,6 @@ nvm use
 npm install
 ```
 
-Clone <https://github.com/rdmorganiser/rdmo-catalog> and run `python3 tools/convert.py json` to convert the xml files to json. Move the created `json` directory to `srv/data`. The `data` directory is used in the node compilation process.
-
 ### Compiles and hot-reloads for development
 
 ```
